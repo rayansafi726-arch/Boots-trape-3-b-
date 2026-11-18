@@ -1,0 +1,93 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+  --third-family: "Potta One", sans-serif;
+  --font3: "Baloo Da 2", sans-serif;
+  --font4: "Irish Grover", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+#experience {
+  padding: 80px 0;
+}
+
+#experience .header {
+  font-family: var(--second-family, sans-serif);
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+  color: #353535;
+  margin-bottom: 50px;
+}
+
+#experience h4 {
+  font-family: var(--font-family, sans-serif);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 180%;
+  color: #353535;
+}
+
+#experience p {
+  font-family: var(--font-family, sans-serif);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: #7a7a7a;
+}
+
+#experience .parent {
+  position: relative;
+}
+
+#experience .parent::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 0;
+  right: -120px;
+  border-radius: 50%;
+  border: 2px dashed #7a7a7a;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#experience .parent::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  right: -110px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#experience .row {
+  position: relative;
+  margin-bottom: 0;
+}
+
+#experience .parent .line {  
+  position: absolute;
+  height: 105%;
+  border-right: 2px dashed #7a7a7a;
+  right: -100px;
+  top: 0;
+}
+
+#experience .row:nth-child(3n+1) .parent::before { 
+    background-color: #52ab70; 
+}
+
+#experience .row:nth-child(3n+2) .parent::before { 
+    background-color: #FF7F50; 
+}
+
+#experience .row:nth-child(3n+3) .parent::before { 
+    background-color: #FFD233; 
+}

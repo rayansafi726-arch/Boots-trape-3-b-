@@ -1,0 +1,30 @@
+@media (max-width: 991.98px) {
+  #experience .parent::after {
+    top: 0;
+    left: -45px;
+  }
+  
+  #experience .parent::before {
+    top: 11px;
+    left: -34px;
+  }
+  
+  #experience .row {
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  #experience .row::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    height: 105%;
+    border-right: 2px dashed #7a7a7a;
+  }
+  
+  #experience .parent .line {
+    display: none;
+  }
+}
